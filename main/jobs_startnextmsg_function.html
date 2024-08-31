@@ -31,7 +31,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">AWS IoT Jobs<span id="projectnumber">&#160;v1.5.0</span>
+   <div id="projectname">AWS IoT Jobs<span id="projectnumber">&#160;v1.5.1</span>
    </div>
    <div id="projectbrief">Client library for AWS IoT Jobs</div>
   </td>
@@ -104,7 +104,7 @@ $(document).ready(function(){initNavTree('jobs_startnextmsg_function.html',''); 
 <div class="line">                          <span class="keywordtype">size_t</span> clientTokenLength,</div>
 <div class="line">                          <span class="keywordtype">char</span> * buffer,</div>
 <div class="line">                          <span class="keywordtype">size_t</span> bufferSize );</div>
-<div class="ttc" id="ajobs_8h_html_ad114add07898edb20cebd6e14b579de7"><div class="ttname"><a href="jobs_8h.html#ad114add07898edb20cebd6e14b579de7">Jobs_StartNextMsg</a></div><div class="ttdeci">size_t Jobs_StartNextMsg(const char *clientToken, size_t clientTokenLength, char *buffer, size_t bufferSize)</div><div class="ttdoc">Populate a message string for a StartNextPendingJobExecution request.</div><div class="ttdef"><b>Definition:</b> jobs.c:718</div></div>
+<div class="ttc" id="ajobs_8h_html_ad114add07898edb20cebd6e14b579de7"><div class="ttname"><a href="jobs_8h.html#ad114add07898edb20cebd6e14b579de7">Jobs_StartNextMsg</a></div><div class="ttdeci">size_t Jobs_StartNextMsg(const char *clientToken, size_t clientTokenLength, char *buffer, size_t bufferSize)</div><div class="ttdoc">Populate a message string for a StartNextPendingJobExecution request.</div><div class="ttdef"><b>Definition:</b> jobs.c:727</div></div>
 </div><!-- fragment --><p>Populate a message string for a StartNextPendingJobExecution request.  </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -121,7 +121,7 @@ The message length if the write is successful</dd></dl>
 <p><b>Example</b> </p><div class="fragment"><div class="line"><span class="comment">// The Following Example shows usage of the Jobs_StartNextMsg API</span></div>
 <div class="line"><span class="comment">// to generate a message string for a StartNextPendingJobExecution request.</span></div>
 <div class="line"> </div>
-<div class="line"><span class="keyword">const</span> <span class="keywordtype">char</span> * clientToken = <span class="stringliteral">&quot;test&quot;</span>;</div>
+<div class="line"><span class="keyword">const</span> <span class="keywordtype">char</span> clientToken[] = <span class="stringliteral">&quot;test&quot;</span>;</div>
 <div class="line"><span class="keywordtype">size_t</span> clientTokenLength = ( <span class="keyword">sizeof</span>( clientToken ) - 1U );</div>
 <div class="line"><span class="keywordtype">char</span> messageBuffer[ <a class="code hl_define" href="group__jobs__constants.html#gafe00b72dedfd3aac85929f54dbbc1ac3">START_JOB_MSG_LENGTH</a> ] = {0};</div>
 <div class="line"><span class="keywordtype">size_t</span> messageLength = 0U;</div>
