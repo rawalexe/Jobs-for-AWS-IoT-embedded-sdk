@@ -103,6 +103,8 @@ $(document).ready(function(){initNavTree('populatejobdocfields_function.html',''
 <div class="textblock"><div class="fragment"><div class="line"><span class="keywordtype">bool</span> populateJobDocFields( <span class="keyword">const</span> <span class="keywordtype">char</span> * jobDoc,</div>
 <div class="line">                           <span class="keyword">const</span> <span class="keywordtype">size_t</span> jobDocLength,</div>
 <div class="line">                           int32_t fileIndex,</div>
+<div class="line">                           <span class="keyword">const</span> <span class="keywordtype">char</span> * protocol,</div>
+<div class="line">                           <span class="keyword">const</span> <span class="keywordtype">size_t</span> protocolLength,</div>
 <div class="line">                           <a class="code hl_struct" href="struct_afr_ota_job_document_fields__t.html">AfrOtaJobDocumentFields_t</a> * result );</div>
 <div class="ttc" id="astruct_afr_ota_job_document_fields__t_html"><div class="ttname"><a href="struct_afr_ota_job_document_fields__t.html">AfrOtaJobDocumentFields_t</a></div><div class="ttdoc">struct containing the fields of an AFR OTA Job Document</div><div class="ttdef"><b>Definition:</b> job_parser.h:23</div></div>
 </div><!-- fragment --><p>Populate the fields of 'result', returning true if successful.  </p>
@@ -111,6 +113,8 @@ $(document).ready(function(){initNavTree('populatejobdocfields_function.html',''
     <tr><td class="paramname">jobDoc</td><td>FreeRTOS OTA job document </td></tr>
     <tr><td class="paramname">jobDocLength</td><td>OTA job document length </td></tr>
     <tr><td class="paramname">fileIndex</td><td>The index of the file to use properties of </td></tr>
+    <tr><td class="paramname">protocol</td><td>The protocol to use </td></tr>
+    <tr><td class="paramname">protocolLength</td><td>The length of the protocol </td></tr>
     <tr><td class="paramname">result</td><td>Job document structure to populate </td></tr>
   </table>
   </dd>
